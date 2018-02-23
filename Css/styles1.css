@@ -1,0 +1,185 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.body {
+    background: rgba(210, 255, 82, 0.4);
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.col_1 {
+    width: 100%;
+}
+
+.col_2 {
+    width: 50%;
+}
+
+.col_3 {
+    width: 33.3%;
+}
+
+.head__logo {
+    padding-top: 20px;
+    max-width: 150px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero {
+    background: url("../images/hero.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    min-height: 200px;
+}
+
+.container {
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 1px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.card__image {
+    margin: 0;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-title,
+.main__title,
+.subtitle {
+    color: #666856;
+    margin: 5px 0px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.line {
+    height: 2px;
+    background-color: #bcbbbb;
+    margin: 20px 0;
+    box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.main__title {
+    font-size: 35px;
+}
+
+.subtitle {
+    font-size: 24px;
+}
+
+.work__link {
+    color: #7d97ad;
+    text-align: center;
+}
+
+.featured {
+    color: #bcbbbb;
+    font-size: 40px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.text__thin {
+    font-weight: 100;
+}
+
+@media screen and (min-width: 360px) {
+    .featured {
+        text-align: left;
+    }
+    .main__title {
+        font-size: 45px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .hero {
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: calc((100% - 80px)/2);
+        margin: 0 20px 20px;
+    }
+    .head__logo {
+        width: 30%;
+        margin-left: 0;
+    }
+    .head__title {
+        width: 70%;
+        padding-top: 20px;
+        text-align: right;
+    }
+    .hero {
+        min-height: 350px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .wrap {
+        max-width: 1000px;
+    }
+    .main__title {
+        font-size: 70px;
+    }
+    .subtitle {
+        font-size: 24px;
+    }
+    .card {
+        width: calc((100% - 40px)/3);
+        margin: 0 20px 0 0;
+    }
+    .card:last-of-type {
+        margin-right: 0;
+    }
+    .hero {
+        min-height: 400px;
+    }
+}

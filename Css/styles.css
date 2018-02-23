@@ -1,0 +1,190 @@
+html,
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.body {
+    background: radial-gradient(ellipse at center, #fffce0 0%, #e0e0ff 100%);
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.col_1 {
+    width: 100%;
+}
+
+
+/* header of the page */
+
+.head__logo {
+    padding-top: 5px;
+    max-width: 130px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.work-title,
+.main__title,
+.subtitle {
+    color: #666856;
+    margin: 5px 0;
+    text-transform: uppercase;
+    display: block;
+}
+
+.line {
+    height: 2px;
+    background-color: #bcbbbb;
+    margin: 5px 0;
+    box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.main__title {
+    font-size: 35px;
+}
+
+.subtitle {
+    font-size: 24px;
+}
+
+
+/* hero image background */
+
+.hero {
+    background: url("../images/hero.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    max-height: 170px;
+}
+
+
+/* container for project cards */
+
+.container {
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* project card */
+
+.card {
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+}
+
+.card__image {
+    margin: 0;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work__link {
+    color: #7d97ad;
+    text-align: center;
+}
+
+.featured {
+    color: #bcbcbb;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.text__thin {
+    font-weight: 100;
+}
+
+@media screen and (min-width: 360px) {
+    .featured {
+        text-align: left;
+        font-size: 25px;
+    }
+    .main__title {
+        font-size: 45px;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+    .hero {
+        max-height: 200px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: calc((100% - 80px)/2);
+        margin: 0 20px 20px;
+    }
+    .head__logo {
+        width: 30%;
+        margin-left: 0;
+    }
+    .head__title {
+        width: 70%;
+        text-align: right;
+    }
+    .hero {
+        max-height: 260px;
+    }
+    .featured {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .wrap {
+        max-width: 1000px;
+    }
+    .main__title {
+        font-size: 60px;
+    }
+    .subtitle {
+        font-size: 24px;
+    }
+    .card {
+        width: calc((100% - 40px)/3);
+        margin: 0 20px 0 0;
+    }
+    .card:last-of-type {
+        margin-right: 0;
+    }
+    .hero {
+        min-height: 300px;
+    }
+}
