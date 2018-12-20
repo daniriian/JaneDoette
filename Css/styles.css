@@ -72,7 +72,7 @@ img {
 /* hero image background */
 
 .hero {
-    background: url(../images/hero.png) no-repeat center;
+    background: url(/images/hero.png) no-repeat center;
     background-size: cover;
     height: 100%;
     max-height: 170px;
@@ -142,12 +142,15 @@ img {
         text-align: left;
         font-size: 25px;
     }
+
     .main__title {
         font-size: 45px;
     }
+
     .subtitle {
         font-size: 20px;
     }
+
     .hero {
         max-height: 200px;
     }
@@ -158,17 +161,21 @@ img {
         width: calc((100% - 80px)/2);
         margin: 0 20px 20px;
     }
+
     .head__logo {
         width: 30%;
         margin-left: 0;
     }
+
     .head__title {
         width: 70%;
         text-align: right;
     }
+
     .hero {
         max-height: 260px;
     }
+
     .featured {
         font-size: 30px;
     }
@@ -178,19 +185,24 @@ img {
     .wrap {
         max-width: 1000px;
     }
+
     .main__title {
         font-size: 60px;
     }
+
     .subtitle {
         font-size: 24px;
     }
+
     .card {
         width: calc((100% - 40px)/3);
         margin: 0 20px 0 0;
     }
+
     .card:last-of-type {
         margin-right: 0;
     }
+
     .hero {
         min-height: 300px;
     }
